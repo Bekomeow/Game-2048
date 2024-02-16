@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane style="-fx-background-color: D4FFC3;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.main.Controller">
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity">
+         <children>
+            <AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="515.0" prefWidth="390.0" style="-fx-background-color: #DEF6FE;">
+               <children>
+                  <ImageView fitHeight="515.0" fitWidth="390.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/image2048.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="139.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2048" textAlignment="CENTER">
+                     <font>
+                        <Font name="Consolas Bold" size="50.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="startButton" layoutX="142.0" layoutY="237.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="102.0" style="-fx-background-color: #85E1FF; -fx-background-radius: 50;" text="START" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Corbel Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="settingButton" layoutX="338.0" layoutY="10.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="42.0" rotate="35.0" style="-fx-background-color: #85E1FF; -fx-background-radius: 50;" text="📎" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="gamePane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="515.0" prefWidth="390.0" style="-fx-background-color: #DEF6FE;" visible="false">
+               <children>
+                  <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#85e1ff" height="370.0" layoutX="10.0" layoutY="90.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="370.0" />
+                  <Text fill="WHITE" layoutX="17.0" layoutY="54.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="2048" textAlignment="CENTER" wrappingWidth="110.13665771484375">
+                     <font>
+                        <Font name="Consolas Bold" size="50.0" />
+                     </font>
+                  </Text>
+                  <AnchorPane layoutX="278.0" layoutY="10.0" prefHeight="43.0" prefWidth="102.0" style="-fx-background-color: #FFDE59; -fx-background-radius: 3;">
+                     <children>
+                        <Text fill="WHITE" layoutX="20.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SCORE" textAlignment="CENTER" wrappingWidth="61.14288330078125">
+                           <font>
+                              <Font name="Consolas Bold" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="scoreText" fill="WHITE" layoutX="11.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="80.0">
+                           <font>
+                              <Font name="Consolas" size="20.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <Button fx:id="newGameButton" layoutX="144.0" layoutY="475.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="101.0" style="-fx-background-radius: 3; -fx-background-color: #85E1FF;" text="NEW GAME" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Corbel Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Rectangle fx:id="box4" arcHeight="30.0" arcWidth="30.0" fill="#def6fe" height="80.0" layoutX="289.0" layoutY="103.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Text fx:id="slot4" fill="WHITE" layoutX="295.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" visible="false" wrappingWidth="70.28570556640625">
+                     <font>
+                        <Font name="Consolas Bold" size="30.0" />
+                     </font>
+                  </Text>
+                  <Rectangle fx:id="box3" arcHeight="30.0" arcWidth="30.0" fill="#def6fe" height="80.0" layoutX="200.0" layoutY="100.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Text fx:id="slot3" fill="WHITE" layoutX="205.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" visible="false" wrappingWidth="70.28570556640625">
+                     <font>
+                        <Font name="Consolas Bold" size="30.0" />
+                     </font>
+                  </Text>
+                  <Rectangle fx:id="box2" arcHeight="30.0" arcWidth="30.0" fill="#def6fe" height="80.0" layoutX="110.0" layoutY="100.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Text fx:id="slot2" fill="WHITE" layoutX="115.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" visible="false" wrappingWidth="70.28570556640625">
+                     <font>
+                        <Font name="Consolas Bold" size="30.0" />
+                     </font>
+                  </Text>
+                  <Rectangle fx:id="box1" arcHeight="30.0" arcWidth="30.0" fill="#def6fe" height="80.0" layoutX="20.0" layoutY="100.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Text fx:id="slot1" fill="WHITE" layoutX="25.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" visible="false" wrappingWidth="70.28570556640625">
+                     <font>
+                        <Font name="Consolas Bold" size="30.0" />
+                     </font>
+                  </Text>
+                  <Rectangle fx:id="box8" arcHeight="30.0" arcWidth="30.0" fill="#def6fe" height="80.0" layoutX="290.0" layoutY="190.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Text fx:id="slot8" fill="WHITE" layoutX="295.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" visible="false" wrappingWidth="70.28570556640625">
+                     <font>
+                        <Font name="Consolas Bold" size="30.0" />
+                     </font>
+                  </Text>
+                  <Rectangle fx:id="box7" arcHeight="30.0" arcWidth="30.0" fill="#def6fe" height="80.0" layoutX="200.0" layoutY="190.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Text fx:id="slot7" fill="WHITE" layoutX="205.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" visible="false" wrappingWidth="70.28570556640625">
+                     <font>
+                        <Font name="Consolas Bold" size="30.0" />
+                     </font>
+                  </Text>
+                  <Rectangle fx:id="box6" arcHeight="30.0" arcWidth="30.0" fill="#def6fe" height="80.0" layoutX="110.0" layoutY="190.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Text fx:id="slot6" fill="WHITE" layoutX="115.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" visible="false" wrappingWidth="70.28570556640625">
+                     <font>
+                        <Font name="Consolas Bold" size="30.0" />
+                     </font>
+                  </Text>
+                  <Rectangle fx:id="box5" arcHeight="30.0" arcWidth="30.0" fill="#def6fe" height="80.0" layoutX="20.0" layoutY="190.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Text fx:id="slot5" fill="WHITE" layoutX="25.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" visible="false" wrappingWidth="70.28570556640625">
+                     <font>
+                        <Font name="Consolas Bold" size="30.0" />
+                     </font>
+                  </Text>
+                  <Rectangle fx:id="box12" arcHeight="30.0" arcWidth="30.0" fill="#def6fe" height="80.0" layoutX="290.0" layoutY="280.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Text fx:id="slot12" fill="WHITE" layoutX="295.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" visible="false" wrappingWidth="70.28570556640625">
+                     <font>
+                        <Font name="Consolas Bold" size="30.0" />
+                     </font>
+                  </Text>
+                  <Rectangle fx:id="box11" arcHeight="30.0" arcWidth="30.0" fill="#def6fe" height="80.0" layoutX="200.0" layoutY="280.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Text fx:id="slot11" fill="WHITE" layoutX="205.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" visible="false" wrappingWidth="70.28570556640625">
+                     <font>
+                        <Font name="Consolas Bold" size="30.0" />
+                     </font>
+                  </Text>
+                  <Rectangle fx:id="box10" arcHeight="30.0" arcWidth="30.0" fill="#def6fe" height="80.0" layoutX="110.0" layoutY="280.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Text fx:id="slot10" fill="WHITE" layoutX="115.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" visible="false" wrappingWidth="70.28570556640625">
+                     <font>
+                        <Font name="Consolas Bold" size="30.0" />
+                     </font>
+                  </Text>
+                  <Rectangle fx:id="box9" arcHeight="30.0" arcWidth="30.0" fill="#def6fe" height="80.0" layoutX="20.0" layoutY="280.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Text fx:id="slot9" fill="WHITE" layoutX="25.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" visible="false" wrappingWidth="70.28570556640625">
+                     <font>
+                        <Font name="Consolas Bold" size="30.0" />
+                     </font>
+                  </Text>
+                  <Rectangle fx:id="box16" arcHeight="30.0" arcWidth="30.0" fill="#def6fe" height="80.0" layoutX="290.0" layoutY="370.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Text fx:id="slot16" fill="WHITE" layoutX="295.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" visible="false" wrappingWidth="70.28570556640625">
+                     <font>
+                        <Font name="Consolas Bold" size="30.0" />
+                     </font>
+                  </Text>
+                  <Rectangle fx:id="box15" arcHeight="30.0" arcWidth="30.0" fill="#def6fe" height="80.0" layoutX="200.0" layoutY="370.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Text fx:id="slot15" fill="WHITE" layoutX="205.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" visible="false" wrappingWidth="70.28570556640625">
+                     <font>
+                        <Font name="Consolas Bold" size="30.0" />
+                     </font>
+                  </Text>
+                  <Rectangle fx:id="box14" arcHeight="30.0" arcWidth="30.0" fill="#def6fe" height="80.0" layoutX="110.0" layoutY="370.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Text fx:id="slot14" fill="WHITE" layoutX="115.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" visible="false" wrappingWidth="70.28570556640625">
+                     <font>
+                        <Font name="Consolas Bold" size="30.0" />
+                     </font>
+                  </Text>
+                  <Rectangle fx:id="box13" arcHeight="30.0" arcWidth="30.0" fill="#def6fe" height="80.0" layoutX="20.0" layoutY="370.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Text fx:id="slot13" fill="WHITE" layoutX="25.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" visible="false" wrappingWidth="70.28570556640625">
+                     <font>
+                        <Font name="Consolas Bold" size="30.0" />
+                     </font>
+                  </Text>
+                  <AnchorPane layoutX="168.0" layoutY="10.0" prefHeight="43.0" prefWidth="102.0" style="-fx-background-color: #C1FF72; -fx-background-radius: 3;">
+                     <children>
+                        <Text fill="WHITE" layoutX="20.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BEST" textAlignment="CENTER" wrappingWidth="61.14288330078125">
+                           <font>
+                              <Font name="Consolas Bold" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="bestText" fill="WHITE" layoutX="11.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="80.0">
+                           <font>
+                              <Font name="Consolas" size="20.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <Button fx:id="backToMainButton" layoutX="20.0" layoutY="476.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="55.0" rotate="180.0" style="-fx-background-color: #85E1FF; -fx-background-radius: 3;" text="➜" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Corbel Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="undoButton" layoutX="315.0" layoutY="475.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="55.0" style="-fx-background-radius: 3; -fx-background-color: #85E1FF;" text="UNDO" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Corbel Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <AnchorPane fx:id="gameOverPane" layoutX="10.0" layoutY="90.0" opacity="0.9" prefHeight="370.0" prefWidth="370.0" style="-fx-background-color: #85e1ff; -fx-background-radius: 11;" visible="false">
+                     <children>
+                        <Text fill="#1a5b86" layoutX="74.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GAME OVER!" textAlignment="CENTER" wrappingWidth="221.5653076171875">
+                           <font>
+                              <Font name="Corbel Bold" size="30.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="tryAgainButton" layoutX="144.0" layoutY="198.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="82.0" style="-fx-background-radius: 3; -fx-background-color: #1a5b86;" text="Try Again" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Corbel Bold" size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="settingPane" prefHeight="515.0" prefWidth="390.0" style="-fx-background-color: #DEF6FE;" visible="false">
+               <children>
+                  <Button fx:id="backButton" alignment="CENTER" contentDisplay="CENTER" layoutX="338.0" layoutY="10.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="42.0" style="-fx-background-color: #85E1FF; -fx-background-radius: 50;" text="✖" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Text layoutX="41.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hi, friend !">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="41.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This is the first version of my application">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="41.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="I hope you enjoy this app :)">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="95.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/bongo-cat.gif" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="41.0" layoutY="468.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Developer: Bekooo" />
+                  <Text layoutX="41.0" layoutY="488.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telegram: @Toktamyssoff" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
